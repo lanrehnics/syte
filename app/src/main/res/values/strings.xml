@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sytte</string>
+    <string name="on1">Discover the hottest locations\naround you</string>
+    <string name="on2">Connect and hook up with\nfriends around you</string>
+    <string name="on3">Share your experience at\nvarious location</string>
+    <string name="button.finish">FINISH</string>
+    <string name="button.next">NEXT</string>
+    <string name="button.skip">SKIP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

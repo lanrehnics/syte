@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_300"
+    android:layout_height="match_parent"
+    tools:context="com.grandreynetwork.sytte.Fragments.Registration.FragmentEnterPass">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_header"
+            android:text="reset password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_header_boady"
+            android:text="check your phone or email inbox for\nthe reset code and enter it here"
+            android:textSize="15sp" />
+
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:pinLineColors="@color/grey_400" />
+
+        <Button
+            android:id="@+id/btn_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_stroke"
+            android:text="proceed"
+            android:textColor="@color/grey_400" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categories">
+        <item>tv</item>
+        <item>night life</item>
+        <item>hotels</item>
+        <item>restaurant</item>
+        <item>bar</item>
+        <item>cinema</item>
+        <item>gallery</item>
+        <item>parks</item>
+        <item>malls</item>
+        <item>resort</item>
+    </string-array>
+
+    <integer-array name="images">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </integer-array>
+
+    <integer-array name="colors">
+        <item>@color/roseStart</item>
+        <item>@color/roseEnd</item>
+        <item>@color/blueStart</item>
+        <item>@color/blueEnd</item>
+        <item>@color/greenStart</item>
+        <item>@color/greenEnd</item>
+        <item>@color/purpleStart</item>
+        <item>@color/purpleEnd</item>
+    </integer-array>
+
+</resources>

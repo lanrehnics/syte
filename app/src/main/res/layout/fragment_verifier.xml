@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_300"
+    android:layout_height="match_parent"
+    tools:context="com.grandreynetwork.sytte.Fragments.Registration.FragmentVerifier">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/txt_header"
+            android:text="forgot password?"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_headercontent"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="enter your phone no, or email\nwe'llsend you a code to\nreset password"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/lin_phone"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_phone"
+                    android:layout_height="wrap_content"
+                    android:text="phone no."
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/dot_phone"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/lin_email"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email"
+                    android:id="@+id/txt_email"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/dot_email"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_grey" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="phone number"
+            android:layout_margin="10dp"
+            android:id="@+id/et_field"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/signup_shape"
+            android:text="send reset code"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnContainers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/signin_shape"
+            android:text="sign in"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+</RelativeLayout>

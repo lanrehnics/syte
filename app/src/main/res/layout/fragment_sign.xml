@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_300"
+    tools:context="com.grandreynetwork.sytte.Fragments.Registration.FragmentSign">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lin_signin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txt_signin"
+                android:textColor="@color/grey_600"
+                android:layout_height="wrap_content"
+                android:text="sign in"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/dot_signin"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lin_signup"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:textColor="@color/grey_600"
+                android:id="@+id/txt_signup"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/dot_signup"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_grey" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Imported Signing Layout-->
+    <include layout="@layout/signin_layout"/>
+
+    <!--Imported Signing Layout-->
+    <include layout="@layout/signup_layout"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_or"
+        android:layout_gravity="center_horizontal"
+        android:text="or sign in with"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btn_fb_signin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/facebook"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/btn_tw_signin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/twitter"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:background="@drawable/gogle"
+            android:id="@+id/btn_go_signin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grandreynetwork.sytte.Fragments.Registration.FragmentAccDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="account details"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/et_name"
+                android:hint="user name "
+                android:paddingRight="50dp" />
+
+            <com.qintong.library.InsLoadingView
+                android:id="@+id/loading_view"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/good"
+                android:layout_alignParentRight="true"
+                app:end_color="#FFBC00"
+                app:start_color="#FA5A24" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_pass"
+            android:layout_margin="10dp"
+            android:hint="password" />
+
+        <EditText
+            android:id="@+id/et_conf_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="confirm password" />
+
+        <Button
+            android:id="@+id/btn_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_stroke"
+            android:text="proceed"
+            android:textColor="@color/grey_400" />
+
+    </LinearLayout>
+
+</RelativeLayout>

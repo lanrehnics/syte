@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_300"
+    tools:context="com.grandreynetwork.sytte.Fragments.Registration.FragmentRecoverPass">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:src="@drawable/rec_pass"
+            android:layout_margin="30dp"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="forgot password?"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="no problem, just click on the\nbutton below to reset\nyour password"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/btnContainers"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_goback"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/signin_shape"
+            android:text="go back"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/signup_shape"
+            android:text="reset"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

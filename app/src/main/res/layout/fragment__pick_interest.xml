@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_300"
+    android:orientation="vertical"
+    tools:context="com.grandreynetwork.sytte.Fragments.Registration.Fragment_PickInterest">
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="please select your places of interest and\nwe will find content that you will like." />
+
+    <com.igalata.bubblepicker.rendering.BubblePicker
+        android:id="@+id/picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_header"
+        app:backgroundColor="@android:color/white" />
+
+    <LinearLayout
+
+        android:id="@+id/btnContainers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/signin_shape"
+            android:text="sign in"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/signup_shape"
+            android:text="sign up"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

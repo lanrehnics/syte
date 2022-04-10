@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FA6E28</color>
+    <color name="colorPrimaryDark">#FA5A24</color>
+    <color name="colorAccent">#FFBC00</color>
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="black_transparent">#14000000</color>
+    <color name="black_transparent_image">#46000000</color>
+    <color name="active_indicator">@android:color/white</color>
+    <color name="inactive_indicator">#4D000000</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_400">#b1b1b1</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="on_backgroung">#F1F3F6</color>
+    <color name="bg">#757575</color>
+
+    <color name="blueStart">#4EFFF3</color>
+    <color name="blueEnd">#0ca6f9</color>
+    <color name="purpleStart">#a369ff</color>
+    <color name="purpleEnd">#0e56ff</color>
+    <color name="roseStart">#FF6A00</color>
+    <color name="roseEnd">#ef0276</color>
+    <color name="greenStart">#a7f56e</color>
+    <color name="greenEnd">#11c612</color>
+</resources>

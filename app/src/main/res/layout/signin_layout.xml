@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/signin_container"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="enter email, phone no or username" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_forgetpass"
+            android:textSize="17sp"
+            android:layout_alignBaseline="@+id/et_pass"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="forgot?"
+            android:textColor="#b9b9b9" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/signup_shape"
+        android:text="sign in"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
